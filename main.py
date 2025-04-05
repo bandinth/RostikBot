@@ -8,7 +8,7 @@ from aiohttp import web
 import os
 
 API_TOKEN = os.getenv("7944549921:AAHjpkt410iydVMyaELn3XTob0DJj3PtQUQ")  # Безпечніше
-WEBHOOK_URL = os.getenv("WEBHOOK_URL")  # Посилання від Render
+WEBHOOK_URL = os.getenv("https://rostikbot.onrender.com")  # Посилання від Render
 
 bot = Bot(token=API_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher(storage=MemoryStorage())
